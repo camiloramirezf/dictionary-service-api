@@ -1,0 +1,32 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "table",
+      "name": "inputDictionary",
+      "tableName": "ApplicationDictionary",
+      "connection": "akeliusdictionary_STORAGE",
+      "direction": "in"
+    },
+    {
+      "type": "documentDB",
+      "name": "outputDictionary",
+      "databaseName": "%dictionary_db_NAME%",                      
+      "collectionName": "%akelius_translations_NAME%",                         
+      "createIfNotExists": false,
+      "connection": "akelius-dictionary_DOCUMENTDB",                    
+      "direction": "out"
+    }
+  ]
+}

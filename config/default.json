@@ -1,0 +1,11 @@
+// make test config the default. 
+{
+    "dictionaryDB": {
+        "endpoint": "https://akelius-dictionary-test.documents.azure.com:443",
+        "authKey": "Qcd1aqgVkrJUuWRXD3fcVlxUWhh5kRO5FCvQvXS02T3moe3Ci47PHE1bwHjIUFlG2Tr7YZPJmZ2YttGby0Wdzw==",
+        "database": "dictionary_test"        
+    },
+    "collections": {
+        "akelius_translations": "akelius_translations_test"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "dictionaryDB": {
+        "endpoint": "DICTIONARY_DB_ENDPOINT",
+        "authKey": "DICTIONARY_DB_AUTHKEY",
+        "database": "DICTIONARY_DB_DATABASE_NAME"
+    },
+    "collections": {
+        "akelius_translations": "AKELIUS_TRANSLATIONS_NAME"
+    }
+}

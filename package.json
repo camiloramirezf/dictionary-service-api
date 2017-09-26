@@ -1,0 +1,20 @@
+{
+  "name": "vocabulary-functions",
+  "version": "1.0.0",
+  "description": "API for performing akelius vocabulary related actions",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "config": "^1.26.2",
+    "documentdb": "^1.12.2",
+    "node-fetch": "^1.7.3",
+    "request": "^2.82.0",
+    "request-promise": "^4.2.1",
+    "xlsx-to-json": "^0.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

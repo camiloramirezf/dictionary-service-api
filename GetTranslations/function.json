@@ -1,0 +1,25 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "documentDB",
+      "name": "inputTranslations",
+      "databaseName": "%dictionary_db_NAME%",
+      "collectionName": "%akelius_translations_NAME%",
+      "connection": "akelius-dictionary_DOCUMENTDB",
+      "direction": "in",
+      "sqlQuery": "SELECT * FROM dict WHERE dict.application = {application}" 
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "documentDB",
+      "name": "inputDocument",
+      "databaseName": "%dictionary_db_NAME%",
+      "collectionName": "%akelius_definitions_NAME%",
+      "sqlQuery": "SELECT * FROM dict WHERE dict.src = {lang} AND dict.key = {key}",
+      "connection": "akelius-dictionary_DOCUMENTDB",
+      "direction": "in"
+    }
+  ]
+}
