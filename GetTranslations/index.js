@@ -7,9 +7,9 @@ module.exports = function (context, req, inputTranslations) {
        
     var response = inputTranslations.map((item) => {
         var json = {
-            [src] : inputTranslations[src],
-            [target] : inputTranslations[target],
-            "usage": inputTranslations["usage"]
+            [src] : item[src],
+            [target] : item[target],
+            "usage": item["usage"]
         }
 
         return json;
