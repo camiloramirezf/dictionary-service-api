@@ -4,12 +4,12 @@ module.exports = function (context, req, inputTranslations) {
 
     var src     = req.query.src;
     var target  = req.query.target;
-
-    var response = inputDocument.map((item) => {
+       
+    var response = inputTranslations.map((item) => {
         var json = {
-            [src] : inputDocument[src],
-            [target] : inputDocument[target],
-            "usage": inputDocument["usage"]
+            [src] : inputTranslations[src],
+            [target] : inputTranslations[target],
+            "usage": inputTranslations["usage"]
         }
 
         return json;
@@ -17,10 +17,10 @@ module.exports = function (context, req, inputTranslations) {
     context.log('JavaScript HTTP trigger function processed a request.');    
     context.res = {
         // status: 200, /* Defaults to 200 */
-        body: {
+        body: {                
             list: response
         }
-    };    
+    };      
     
     context.done();
 };

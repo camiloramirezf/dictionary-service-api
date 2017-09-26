@@ -5,13 +5,29 @@
   "dependencies": {
     "bluebird": "^3.5.0",
     "config": "^1.26.2",
+    "del": "^3.0.0",
     "documentdb": "^1.12.2",
     "node-fetch": "^1.7.3",
     "request": "^2.82.0",
     "request-promise": "^4.2.1",
     "xlsx-to-json": "^0.3.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "from2-array": "0.0.4",
+    "git-raw-commits": "^1.2.0",
+    "github": "^11.0.0",
+    "gulp-bump": "^2.7.0",
+    "gulp-env": "^0.4.0",
+    "gulp-help": "^1.6.1",
+    "gulp-run": "^1.7.1",
+    "kudu-api": "^1.4.1",
+    "merge2": "^1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-archiver": "^1.0.0",
+    "gulp-prompt": "^0.2.0",
+    "gulp-shell": "^0.6.3",
+    "gulp-util": "^3.0.8"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
